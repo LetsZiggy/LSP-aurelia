@@ -1,0 +1,64 @@
+{
+	"command": [ "${node_bin}", "${server_path}", "--stdio" ],
+
+	// For more information, visit the Repo at https://github.com/aurelia/vscode-extension
+	"disabled_capabilities": {},
+	"initializationOptions": {},
+	"settings": {
+		"aurelia.pathToTsConfig": "${project_path}/tsconfig.json",
+
+		"aurelia.aureliaProject.rootDirectory": "${project_path}",
+		"aurelia.aureliaProject.packageJsonInclude": [],
+		"aurelia.aureliaProject.pathToAureliaFiles": [],
+		"aurelia.aureliaProject.include": [ "src" ],
+		"aurelia.aureliaProject.exclude": [ "**/node_modules", "**/out", "**/build", "**/dist", "aurelia_project" ],
+
+		"aurelia.aureliaProject": {
+			"rootDirectory": "${project_path}",
+			"packageJsonInclude": [],
+			"pathToAureliaFiles": [],
+			"include": [ "src" ],
+			"exclude": [ "**/node_modules", "**/out", "**/build", "**/dist", "aurelia_project" ],
+		},
+
+		"aurelia.relatedFiles.view": [ ".html" ],
+		"aurelia.relatedFiles.script": [ ".js", ".ts" ],
+		"aurelia.relatedFiles.style": [ ".css", ".less", ".sass", ".scss", ".styl" ],
+		"aurelia.relatedFiles.unit": [ ".spec.js", ".spec.ts" ],
+
+		"aurelia.relatedFiles": {
+			"view": [ ".html" ],
+			"script": [ ".js", ".ts" ],
+			"style": [ ".css", ".less", ".sass", ".scss", ".styl" ],
+			"unit": [ ".spec.js", ".spec.ts" ],
+		},
+
+		"aurelia.capabilities.codeActions": true,
+		"aurelia.capabilities.completions": true,
+		"aurelia.capabilities.definitions": true,
+		"aurelia.capabilities.documentSymbols": true,
+		"aurelia.capabilities.renames": true,
+		"aurelia.capabilities.workspaceSymbols": true,
+
+		"aurelia.capabilities": {
+			"codeActions": true,
+			"completions": true,
+			"definitions": true,
+			"documentSymbols": true,
+			"renames": true,
+			"workspaceSymbols": true,
+		},
+	},
+
+	// ST3
+	"languages": [
+		{
+			"languageId": "html",
+			"scopes": [ "text.html.basic", "text.html.aurelia" ],
+			"syntaxes": [ "Packages/HTML/HTML.sublime-syntax", "Packages/AureliaHTML/AureliaHTML.sublime-syntax" ],
+		},
+	],
+
+	// ST4
+	"selector": "text.html.basic | text.html.aurelia",
+}
