@@ -1,0 +1,21 @@
+{
+  "command": [ "${node_bin}", "${server_path}", "--stdio" ],
+  "disabled_capabilities": {},
+  "initializationOptions": {},
+  "settings": {},
+  "file_watcher": {
+    "patterns": [ "{**/*.js,**/*.ts}" ],
+    "events": [ "create", "change", "delete" ],
+  },
+  // ST4
+  "selector": "text.html.aurelia",
+  "priority_selector": "text.html.aurelia",
+  // ST3
+  "languages": [
+    {
+      "languageId": "aurelia",
+      "scopes": [ "text.html.aurelia" ],
+      "syntaxes": [ "Packages/Aurelia HTML/AureliaHTML.sublime-syntax" ],
+    },
+  ],
+}

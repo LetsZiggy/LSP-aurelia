@@ -1,0 +1,18 @@
+{
+  "schema_version": "3.0.0",
+
+  "packages": [
+    {
+      "name": "LSP-aurelia",
+      "details": "https://github.com/LetsZiggy/LSP-aurelia",
+      "issues": "https://github.com/LetsZiggy/LSP-aurelia/issues",
+      "readme": "https://raw.githubusercontent.com/LetsZiggy/LSP-aurelia/main/README.md",
+      "releases": [
+        {
+          "sublime_text": ">=3000",
+          "tags": true
+        }
+      ]
+    }
+  ]
+}

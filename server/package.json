@@ -1,0 +1,8 @@
+{
+  "name": "sublime-auls",
+  "version": "1.0.0",
+  "dependencies": {
+    "aurelia": "github:LetsZiggy/vscode-extension#sublimelsp",
+    "typescript": "^4.7.2"
+  }
+}
