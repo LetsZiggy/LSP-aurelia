@@ -19,6 +19,12 @@
 			"follow_symlinks": true,
 		},
 		{
+			"path": "server-local",
+			"name": "server-local",
+			"folder_exclude_patterns": [ "node_modules" ],
+			"follow_symlinks": true,
+		},
+		{
 			"path": "~/.config/sublime-text/Packages/LSP-aurelia",
 			"name": "local-packages",
 			"folder_exclude_patterns": [ "node_modules" ],
