@@ -1,0 +1,7 @@
+{
+	"name": "sublime-auls",
+	"version": "1.0.0",
+	"dependencies": {
+		"aurelia": "github:LetsZiggy/aurelia-language-server#sublimelsp"
+	}
+}
