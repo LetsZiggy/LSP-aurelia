@@ -18,4 +18,4 @@ class LspAureliaPlugin(NpmClientHandler):
 
 	# test - server from https://github.com/LetsZiggy/aurelia-language-server
 	server_directory = "server-github"
-	server_binary_path = os.path.join(server_directory, "node_modules", "aurelia", "out", "server.js")
+	server_binary_path = os.path.join(server_directory, "node_modules", "aurelia", "server", "out", "server.js")
