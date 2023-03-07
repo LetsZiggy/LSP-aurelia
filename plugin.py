@@ -17,5 +17,9 @@ class LspAureliaPlugin(NpmClientHandler):
 	# server_binary_path = os.path.join(server_directory) # TODO: edit once working
 
 	# test - server from https://github.com/LetsZiggy/aurelia-language-server
-	server_directory = "server-github"
-	server_binary_path = os.path.join(server_directory, "node_modules", "aurelia", "server", "out", "server.js")
+	# server_directory = "server-github"
+	# server_binary_path = os.path.join(server_directory, "node_modules", "aurelia", "server", "out", "server.js")
+
+	# test - .vsix
+	server_directory = "server-local"
+	server_binary_path = os.path.join(server_directory, "out", "server.js")
