@@ -1,9 +1,12 @@
 {
+	// The path to the server binary used to start the language server.
+	// Use `auto` for the package to manage (install/update) the server automatically.
+	// NOTE: Change this instead of directly updating `command` - the `${server_path}` variable is dynamically resolved based on this setting.
+	// WARNING: Override at your own risk - using a custom binary can cause compatibility issues with server settings.
+	"server_path": "auto",
 	"command": ["${node_bin}", "${server_path}", "--stdio"],
 
 	// For more information, visit the Repo at https://github.com/aurelia/vscode-extension
-	"disabled_capabilities": {},
-	"initializationOptions": {},
 	"settings": {
 		"aurelia.pathToTsConfig": "${project_path}/tsconfig.json",
 
@@ -50,15 +53,5 @@
 		},
 	},
 
-	// ST3
-	"languages": [
-		{
-			"languageId": "html",
-			"scopes": ["text.html.basic", "text.html.aurelia"],
-			"syntaxes": ["Packages/HTML/HTML.sublime-syntax", "Packages/AureliaHTML/AureliaHTML.sublime-syntax"],
-		},
-	],
-
-	// ST4
 	"selector": "text.html.basic | text.html.aurelia",
 }
