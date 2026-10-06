@@ -9,7 +9,7 @@ commit-msg:
         --msg-file="$(git rev-parse --show-toplevel)/{1}"
         --since=$(date +"%Y-%m-%d")
         --max-parents=1
-        --subject-regex="(?:^Initial commit$)|(?:^(?:fixup! )?(?:(?:feat)|(?:fix)|(?:docs)|(?:style)|(?:refactor)|(?:perf)|(?:test)|(?:build)|(?:ci)|(?:chore)|(?:revert))(?:\([^()\r\n]+\))?: (?:(?:LICENSE)|(?:README)|(?:[^\r\n ][^\r\n]+[^. ]))$)"
+        --subject-regex="(?:^Initial commit$)|(?:^(?:fixup! )?(?:(?:(?:feat)(?:\([^()\r\n]+\))?!: [^\r\n ][^\r\n]+[^. ](?:[\r\n][^\r\n]+)?[\r\n]BREAKING CHANGE: [^\r\n ][^\r\n]+[^. ])|(?:(?:(?:feat)|(?:fix)|(?:docs)|(?:style)|(?:refactor)|(?:perf)|(?:test)|(?:build)|(?:ci)|(?:chore)|(?:revert))(?:\([^()\r\n]+\))?: (?:(?:LICENSE)|(?:README)|(?:[^\r\n ][^\r\n]+[^. ]))))$)"
 
 pre-commit:
   # parallel: true
